@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/weui.9b9030f2.css">
-    <link rel="stylesheet" href="/weuix.312c51ca.css">
-    <link rel="stylesheet" href="/main.c52e0fe2.css">
-    <script src="/zepto.min.5b7eb39e.js"></script>
-    <script src="/zepto.weui.e8f317ec.js"></script>
-    <script src="/php.2bf8aca2.js"></script>
-    <script src="/lrz.min.7bed00b4.js"></script>
+    <link rel="stylesheet" href="/e8939fb92bb79a6a185f34b89b9030f2.css">
+    <link rel="stylesheet" href="/306a96cd5ead3262e465f1b8312c51ca.css">
+    <link rel="stylesheet" href="/23b024677d4732ee53b6d7bdc52e0fe2.css">
+    <!-- <script src="./lib/weui/js/zepto.min.js"></script>
+    <script src="./lib/weui/js/zepto.weui.js"></script>
+    <script src="./lib/weui/js/php.js"></script>
+    <script src="./lib/weui/js/lrz.min.js"></script> -->
     <title>请假详细</title>
     <style>.weui-cells.custom .weui-cell {
         padding: 12px 15px;
@@ -76,7 +76,7 @@
       #fhan {
         transform: rotate(-180deg);
       }</style>
-  <script src="/weui.9b9030f2.js"></script><script src="/weuix.312c51ca.js"></script><script src="/main.c52e0fe2.js"></script></head>
+  </head>
   <body>
     <div class="container leavedetails">
       <!--审核通过 调用class  pass   为通过调用  notpass-->
@@ -112,11 +112,11 @@
           <div class="box">
             <div class="item">
               <span class="title">请假开始时间</span>
-              <span>2020-07-21 10时</span>
+              <span>2020-07-22 10时</span>
             </div>
             <div class="item">
               <span class="title">请假结束时间</span>
-              <span>2020-07-21 18时</span>
+              <span>2020-07-22 20时</span>
             </div>
           </div>
         </div>
@@ -132,19 +132,19 @@
           <div class="box">
             <span class="title">事由说明</span>
             <p class="infocontent">
-              感觉最近度数增大，眼睛度数不够，进城配眼镜（如果需要，可以将配镜发票拍照留存）
+              修电脑
             </p>
           </div>
-
           <div class="box">
-            <span class="title">延期时间</span>
-            <p class="infocontent">2020-06-21 20时</p>
-          </div>
-          <div class="box">
-            <span class="title">延期说明</span>
-            <p class="infocontent">
-              早上有课拖堂，出去晚了，六点可能回不来，故延时到八点
-            </p>
+            <!-- 此处的type表示请假延期还是销假；1：请假延期;2为销假 -->
+            <a href="" style="
+                width: 45%;
+                height: 46px;
+                margin-top: 15px;
+                background-color: #d66f2b;
+                color: #fff;
+              " class="weui-btn bg-blue">请假延期</a>
+            <a href="" style="width: 45%; background-color: #46ad77; color: #fff;" class="weui-btn bg-blue">销假</a>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@
             <div class="content">
               <div class="ttl">
                 <span class="text" style="font-size: 16px;">王省欣审核（已通过）</span>
-                <span class="time">07-19 11:20</span>
+                <span class="time">07-21 11:20</span>
               </div>
               <div class="ctn"></div>
             </div>
@@ -186,35 +186,7 @@
             <div class="content">
               <div class="ttl">
                 <span class="text" style="font-size: 16px;">王宁军审核（已通过）</span>
-                <span class="time">07-19 11:30</span>
-              </div>
-              <div class="ctn"></div>
-            </div>
-          </li>
-
-          <li>
-            <!--审核通过 调用class  pass   为通过调用  notpass-->
-            <div class="avatar pass">
-              省欣
-            </div>
-            <div class="content">
-              <div class="ttl">
-                <span class="text" style="font-size: 16px;">王省欣审核（已通过）</span>
-                <span class="time">07-20 16:50</span>
-              </div>
-              <div class="ctn"></div>
-            </div>
-          </li>
-
-          <li>
-            <!--审核通过 调用class  pass   为通过调用  notpass-->
-            <div class="avatar pass">
-              宁军
-            </div>
-            <div class="content">
-              <div class="ttl">
-                <span class="text" style="font-size: 16px;">王宁军审核（已通过）</span>
-                <span class="time">07-20 17:06</span>
+                <span class="time">07-21 11:30</span>
               </div>
               <div class="ctn"></div>
             </div>
@@ -239,7 +211,7 @@
               <i class="icon"></i>
             </div>
             <div class="content pointer">
-              <div class="ttl">审批共耗时2天18小时34分钟</div>
+              <div class="ttl">审批共耗时1天18小时34分钟</div>
             </div>
           </li>
         </ul>
@@ -259,104 +231,128 @@
       <div class="footer-copy-space"></div>
     </div>
 
-    <script src="/checkdev.2c2bb14c.js"></script>
-    <script>$(document).ready(function () {
-  $("#titlebtn").click(function () {
-    var titlebtn = $("#titlebtn");
-    var titlecontent = $("#titlecontent");
-
-    if (titlecontent.is(":hidden")) {
-      titlebtn.removeClass("up").addClass("dowm");
-      $("#titlecontent").show();
-    } else {
-      titlebtn.removeClass("dowm").addClass("up");
-      $("#titlecontent").hide();
-    }
-  });
-});
-$("#qssj").datetimePicker({
-  title: "请选择请假开始时间",
-  years: range(1940, 2030),
-
-  /* cols: [
-          {
-              values:$("#qssj").val(),
-              displayValues:$("#qssj").val().substr(0,$("#qssj").val().length-1)
+    <!-- <script src="js/checkdev.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#titlebtn").click(function () {
+          let titlebtn = $("#titlebtn");
+          let titlecontent = $("#titlecontent");
+          if (titlecontent.is(":hidden")) {
+            titlebtn.removeClass("up").addClass("dowm");
+            $("#titlecontent").show();
+          } else {
+            titlebtn.removeClass("dowm").addClass("up");
+            $("#titlecontent").hide();
           }
-      ], */
-  value: $("#qssj").val(),
-  times: function times() {
-    return [];
-  },
-  parse: function parse(str) {
-    return str.split("-");
-  },
-  onChange: function onChange(picker, values, displayValues) {},
-  onClose: function onClose(p, values, displayValues) {
-    $("#qssj").val(p.value[0] + "-" + p.value[1] + "-" + p.value[2] + " " + p.value[3] + "时");
-    var qssj = $("#qssj").val();
-    var jzsj = $("#jzsj").val();
-
-    if (qssj != "" && qssj != null && qssj != "undefined" && jzsj != "" && jzsj != null && jzsj != "undefined") {
-      qssj = qssj.substr(0, qssj.length - 1).replace(/-/g, "/");
-      jzsj = jzsj.substr(0, jzsj.length - 1).replace(/-/g, "/");
-      var date1 = new Date(qssj);
-      var date2 = new Date(jzsj);
-      var s1 = date1.getTime(),
-          s2 = date2.getTime();
-      var total = (s2 - s1) / 1000;
-      var day = parseInt(total / (24 * 60 * 60)); //计算整数天数
-
-      var afterDay = total - day * 24 * 60 * 60; //取得算出天数后剩余的秒数
-
-      var hour = parseInt(afterDay / (60 * 60)); //计算整数小时数
-
-      if (day != 0) {
-        $("#qjsxs").val(day + "天" + hour + "时");
-      } else {
-        $("#qjsxs").val(hour + "时");
-      }
-    }
-  }
-});
-$("#jzsj").datetimePicker({
-  title: "请选择请假开始时间",
-  years: range(1940, 2030),
-  value: $("#jzsj").val(),
-  times: function times() {
-    return [];
-  },
-  parse: function parse(str) {
-    return str.split("-");
-  },
-  onChange: function onChange(picker, values, displayValues) {},
-  onClose: function onClose(p, values, displayValues) {
-    $("#jzsj").val(p.value[0] + "-" + p.value[1] + "-" + p.value[2] + " " + p.value[3] + "时");
-    var qssj = $("#qssj").val();
-    var jzsj = $("#jzsj").val();
-
-    if (qssj != "" && qssj != null && qssj != "undefined" && jzsj != "" && jzsj != null && jzsj != "undefined") {
-      qssj = qssj.substr(0, qssj.length - 1).replace(/-/g, "/");
-      jzsj = jzsj.substr(0, jzsj.length - 1).replace(/-/g, "/");
-      var date1 = new Date(qssj);
-      var date2 = new Date(jzsj);
-      var s1 = date1.getTime(),
-          s2 = date2.getTime();
-      var total = (s2 - s1) / 1000;
-      var day = parseInt(total / (24 * 60 * 60)); //计算整数天数
-
-      var afterDay = total - day * 24 * 60 * 60; //取得算出天数后剩余的秒数
-
-      var hour = parseInt(afterDay / (60 * 60)); //计算整数小时数
-
-      if (day != 0) {
-        $("#qjsxs").val(day + "天" + hour + "时");
-      } else {
-        $("#qjsxs").val(hour + "时");
-      }
-    }
-  }
-});</script>
-    <script src="/checkdev.2c2bb14c.js"></script>
+        });
+      });
+      $("#qssj").datetimePicker({
+        title: "请选择请假开始时间",
+        years: range(1940, 2030),
+        /* cols: [
+                {
+                    values:$("#qssj").val(),
+                    displayValues:$("#qssj").val().substr(0,$("#qssj").val().length-1)
+                }
+            ], */
+        value: $("#qssj").val(),
+        times: function () {
+          return [];
+        },
+        parse: function (str) {
+          return str.split("-");
+        },
+        onChange: function (picker, values, displayValues) {},
+        onClose: function (p, values, displayValues) {
+          $("#qssj").val(
+            p.value[0] +
+              "-" +
+              p.value[1] +
+              "-" +
+              p.value[2] +
+              " " +
+              p.value[3] +
+              "时"
+          );
+          var qssj = $("#qssj").val();
+          var jzsj = $("#jzsj").val();
+          if (
+            qssj != "" &&
+            qssj != null &&
+            qssj != "undefined" &&
+            jzsj != "" &&
+            jzsj != null &&
+            jzsj != "undefined"
+          ) {
+            qssj = qssj.substr(0, qssj.length - 1).replace(/-/g, "/");
+            jzsj = jzsj.substr(0, jzsj.length - 1).replace(/-/g, "/");
+            var date1 = new Date(qssj);
+            var date2 = new Date(jzsj);
+            var s1 = date1.getTime(),
+              s2 = date2.getTime();
+            var total = (s2 - s1) / 1000;
+            var day = parseInt(total / (24 * 60 * 60)); //计算整数天数
+            var afterDay = total - day * 24 * 60 * 60; //取得算出天数后剩余的秒数
+            var hour = parseInt(afterDay / (60 * 60)); //计算整数小时数
+            if (day != 0) {
+              $("#qjsxs").val(day + "天" + hour + "时");
+            } else {
+              $("#qjsxs").val(hour + "时");
+            }
+          }
+        },
+      });
+      $("#jzsj").datetimePicker({
+        title: "请选择请假开始时间",
+        years: range(1940, 2030),
+        value: $("#jzsj").val(),
+        times: function () {
+          return [];
+        },
+        parse: function (str) {
+          return str.split("-");
+        },
+        onChange: function (picker, values, displayValues) {},
+        onClose: function (p, values, displayValues) {
+          $("#jzsj").val(
+            p.value[0] +
+              "-" +
+              p.value[1] +
+              "-" +
+              p.value[2] +
+              " " +
+              p.value[3] +
+              "时"
+          );
+          var qssj = $("#qssj").val();
+          var jzsj = $("#jzsj").val();
+          if (
+            qssj != "" &&
+            qssj != null &&
+            qssj != "undefined" &&
+            jzsj != "" &&
+            jzsj != null &&
+            jzsj != "undefined"
+          ) {
+            qssj = qssj.substr(0, qssj.length - 1).replace(/-/g, "/");
+            jzsj = jzsj.substr(0, jzsj.length - 1).replace(/-/g, "/");
+            var date1 = new Date(qssj);
+            var date2 = new Date(jzsj);
+            var s1 = date1.getTime(),
+              s2 = date2.getTime();
+            var total = (s2 - s1) / 1000;
+            var day = parseInt(total / (24 * 60 * 60)); //计算整数天数
+            var afterDay = total - day * 24 * 60 * 60; //取得算出天数后剩余的秒数
+            var hour = parseInt(afterDay / (60 * 60)); //计算整数小时数
+            if (day != 0) {
+              $("#qjsxs").val(day + "天" + hour + "时");
+            } else {
+              $("#qjsxs").val(hour + "时");
+            }
+          }
+        },
+      });
+    </script>
+    <script src="js/checkdev.js"></script> -->
   </body>
 </html>
